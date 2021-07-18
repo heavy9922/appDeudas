@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Gastos mensuales</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5"></div>
+    <div class="col-md-6 mt-5">
+      <div class="card " style="width: 18rem;">
+        <img src="../../../../assets/img/pesos.png" class="card-img-top" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 mt-5 mb-5">
+      <form class="mt-5  offset-md-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="bg-light redon ">
+              <div class="form-group">
+                <label class="m-2 mt-5"> Usuario</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Name"
+                  name="email"
+                  [(ngModel)]='email'
+                />
+              </div>
+              <div class="form-group">
+                <label class="m-2">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="*********************"
+                  name="password"
+                  [(ngModel)]='password'
+                />
+              </div>
+              <button type="button" class="btn btn-info m-3">Register</button>
+              <button type="submit" class="btn btn-block btn-primary m-3" (click)="goToHome()">
+                Sing in
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
