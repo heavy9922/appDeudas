@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { ListCostsRoutingModule } from './list-costs-routing.module';
+import { ListCostsComponent } from './list-costs.component';
 import { HeaderModule } from 'src/app/shared/component/header/header.module';
-
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    ListCostsComponent,
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    ListCostsRoutingModule,
     HeaderModule
   ]
 })
-export class HomeModule { }
+export class ListCostsModule { }

@@ -12,21 +12,33 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-  </div>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#"
-            >Home
+          <a
+            class="nav-link active"
+            (click)="goToHome()"
+            style="cursor: pointer"
+            >Listado de meses
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/login">long_up</a>
-        </li>
       </ul>
     </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link text-secundary"
+          (click)="goToLogin()"
+          style="cursor: pointer"
+          >Cerrar_sesion</a
+        >
+      </li>
+    </ul>
+  </div>
 </nav>

@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="card text-center mt-md-5">
+        <div class="card-header bg-primary">Listado de meses</div>
+        <div class="card-body">
+          <table class="table mt-md-3">
+            <thead class="bg-Secondary">
+              <tr>
+                <th scope="col">Meses</th>
+                <th scope="col">Ingresos del mes</th>
+                <th scope="col">Egresos del mes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    routerLink="/listCosts"
+                  >
+                    {{ 1 }}
+                  </button>
+                </td>
+                <td>{{ 2 | currency }}</td>
+                <td>{{ 3 | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer text-dark bg-info">Meses ingresados</div>
+      </div>
+    </div>
+  </div>
+</div>

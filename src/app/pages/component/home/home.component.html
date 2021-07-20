@@ -17,7 +17,7 @@
             <tbody>
               <tr *ngFor="let row of mouths">
                 <td>
-                  <button type="button" class="btn btn-outline-primary">{{row.mouth}}</button>
+                  <button type="button" class="btn btn-outline-primary" routerLink="/listCosts">{{row.mouth}}</button>
                 </td>
                 <td>{{row.Salary |currency}}</td>
                 <td>{{row.valueTotal |currency}}</td>
